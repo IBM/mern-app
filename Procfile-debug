@@ -1,0 +1,2 @@
+web: webpack-dev-server --history-api-fallback --inline --config webpack.dev-proxy.js
+api: node --inspect=0.0.0.0:9229 server/server.js 

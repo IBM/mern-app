@@ -1,0 +1,2 @@
+web: webpack-dev-server --history-api-fallback --inline --config webpack.dev-proxy.js
+api: npm run server-reload

@@ -1,0 +1,32 @@
+node_modules
+node_modules_linux
+server/localdev-config.json
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+# testing
+/coverage
+.nyc_output/
+
+# production
+/build
+
+# misc
+.DS_Store
+.env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# idt
+.ibm-project
+
+# post npm install
+public/
+
+server/localdev-config.json
+vcap-local.js
+credentials.json
+localdev-config.json

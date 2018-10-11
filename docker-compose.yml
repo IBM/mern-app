@@ -1,0 +1,20 @@
+version: '2'
+services:
+  web:
+    build: .
+    image: "mernexample-express-run"
+    container_name: "mernexample-express-run"
+    command: npm run start
+    ports:
+      - "3000:3000"
+    links:
+      - mongo
+    environment:
+      MONGO_URL: "mongo"
+      MONGO_DB_NAME: "comments"
+      NODE_ENV: "development"
+      PORT: 3000
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
