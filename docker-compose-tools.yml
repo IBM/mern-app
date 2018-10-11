@@ -1,0 +1,26 @@
+version: '2'
+services:
+  web:
+    build: 
+      context: . 
+      dockerfile: Dockerfile-tools
+    tty: true
+    image: "mernexample-express-tools"
+    container_name: "mernexample-express-tools"
+    ports:
+      - "3000:3000"
+      - "5858:5858"
+    volumes:
+      - .:/app
+      - ./node_modules_linux:/app/node_modules
+    links:
+      - mongo
+    environment:
+      MONGO_URL: "mongo"
+      MONGO_DB_NAME: "comments"
+      NODE_ENV: "development"
+      PORT: 3000
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"

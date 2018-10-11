@@ -1,0 +1,12 @@
+---
+applications:
+  - command: npm prune --production && NODE_ENV=production npm start
+    env:
+      NPM_CONFIG_PRODUCTION: false
+    instances: 1
+    timeout: 180
+    name: mernexample
+    buildpack: sdk-for-nodejs
+    memory: 256M
+    domain: not-used.net
+    host: not-used
