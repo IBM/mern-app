@@ -53,5 +53,4 @@ chart-path : "chart/mernexample"
 
 # The IBM version of this configuration
 version : "0.0.3"
-ibm-cloud-app-id : "null"
 credentials-filepath : "server/localdev-config.json, vcap-local.js, credentials.json, localdev-config.json"
