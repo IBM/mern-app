@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node server/server.js",
     "debug": "nf --procfile Procfile-debug --port 3000 start",
-    "test": "nyc mocha",
+    "test": "nyc mocha --exit",
     "dev": "nf --procfile Procfile-dev --port 3000 start",
     "build": "webpack --progress --config webpack.prod.js",
     "postinstall": "npm run build",
