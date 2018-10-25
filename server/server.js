@@ -38,3 +38,4 @@ app.use(function (req, res, next) {
 app.use(function (err, req, res, next) {
     res.sendFile(path.join(__dirname, '../public', '500.html'));
 });
+module.exports = server;
