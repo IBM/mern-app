@@ -39,7 +39,7 @@ Ensure [IBM Cloud Developer Tools](https://github.com/IBM-Cloud/ibm-cloud-develo
 curl -sL http://ibm.biz/idt-installer | bash
 ```
 
-To install on Windows, run as Admistrator:
+To install on Windows, run as Administrator:
 
  ```
 Set-ExecutionPolicy Unrestricted; iex(New-Object Net.WebClient).DownloadString('http://ibm.biz/idt-win-installer')
@@ -49,7 +49,7 @@ Set-ExecutionPolicy Unrestricted; iex(New-Object Net.WebClient).DownloadString('
 
 ## Building your MERN app
 
-The starter project supports the concept of dev mode and release mode.  In dev mode, the starter app runs with dev dependencies installed and hot reload enabled for both the front-end and back-end aspects of the app.  Dev mode is intended for use during app development. Release mode excludes dev dependencies and runs the app without hot reload. Release mode is intended for running in production.
+The starter project supports the concept of dev mode and release mode.  In dev mode, the starter app runs with dev dependencies installed and hot reload enabled for both the front-end and back-end aspects of the app. Dev mode is intended for use during app development. Release mode excludes dev dependencies and runs the app without hot reload. Release mode is intended for running in production.
 
 #### Working in development mode
 
@@ -73,7 +73,7 @@ The starter project supports the concept of dev mode and release mode.  In dev m
     ibmcloud dev shell run-dev &
     ```
 
-    A web server will runs on port 3000 and the app itself runs on port 3100. The web server and app will automatically reload if changes are made to the source.
+    A web server will runs on port `3000` and the app itself runs on port `3100`. The web server and app will automatically reload if changes are made to the source.
 
 4. Run the app in interactive debug mode with command:
 
@@ -81,7 +81,7 @@ The starter project supports the concept of dev mode and release mode.  In dev m
     ibmcloud dev debug
     ```
 
-    The app listens on port 5858 for the debug client to attach to it, and on port 3000 for app requests.
+    The app listens on port `5858` for the debug client to attach to it, and on port `3000` for app requests.
 
 #### Working in release mode
 
