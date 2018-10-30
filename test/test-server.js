@@ -16,55 +16,61 @@ var http = require('http');
 
 // Below code demonstrates using various methods of testing
 describe('Testing Server', function() {
+  let test_server;
+  this.timeout(0);
 
-  before(function(done){
-    require(process.cwd() + '/server/server');
-    setTimeout(done, 5000); // Waiting 5 seconds for server to start
-    this.timeout(10000);
+  before(done => {
+    let app = require(process.cwd() + '/server/server');
+    test_server = app.listen(process.env.PORT || 3000, done);
   });
-    it('Public endpoint returns "Hello!"', function(done){
-      var responseString = '';
 
-      var options = {
-        host: 'localhost',
-        port: process.env.PORT || 3000,
-        path: '/'
-      };
+  it('Public endpoint returns "Hello!"', function(done){
+    var responseString = '';
 
-      var callback = function(response){
-        response.on('data', function (chunk) {
-          responseString += chunk;
-        });
+    var options = {
+      host: 'localhost',
+      port: process.env.PORT || 3000,
+      path: '/'
+    };
 
-        response.on('end', function () {
-          expect(responseString).to.include('You need to enable JavaScript to run this app.');
-          done();
-        });
-      };
+    var callback = function(response){
+      response.on('data', function (chunk) {
+        responseString += chunk;
+      });
 
-      http.request(options, callback).end();
-    });
+      response.on('end', function () {
+        expect(responseString).to.include('You need to enable JavaScript to run this app.');
+        done();
+      });
+    };
 
-    it('Health endpoint shows status up', function(done){
-      var responseString = '';
+    http.request(options, callback).end();
+  });
 
-      var options = {
-        host: 'localhost',
-        port: process.env.PORT || 3000,
-        path: '/health'
-      };
+  it('Health endpoint shows status up', function(done){
+    var responseString = '';
 
-      var callback = function(response){
-        response.on('data', function (chunk) {
-          responseString += chunk;
-        });
+    var options = {
+      host: 'localhost',
+      port: process.env.PORT || 3000,
+      path: '/health'
+    };
 
-        response.on('end', function () {
-          expect(responseString).to.equal('{"status":"UP"}');
-          done();
-        });
-      };
+    var callback = function(response){
+      response.on('data', function (chunk) {
+        responseString += chunk;
+      });
 
-      http.request(options, callback).end();
-    });
+      response.on('end', function () {
+        expect(responseString).to.equal('{"status":"UP"}');
+        done();
+      });
+    };
+
+    http.request(options, callback).end();
+  });
+
+  after(done => {
+    test_server.close(done);
+  });
 });
