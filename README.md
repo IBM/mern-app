@@ -217,20 +217,6 @@ services:
      password: {password}
      env: production
 ```
-Open `bindings.yaml` under the chart directory to add Mongo references. Add the following entries at the end of the file if they are not there already.
-
-```yaml
-  - name: MONGO_URL
-    value: {{ .Values.services.mongo.url }}
-  - name: MONGO_DB_NAME
-    value: {{ .Values.services.mongo.name }}
-  - name: MONGO_USER
-    value: {{ .Values.services.mongo.username }}
-  - name: MONGO_PASS
-    value: {{ .Values.services.mongo.password }}
-  - name: MONGO_CA
-    value: {{ .Values.services.mongo.ca }}
-```
 
 ## Links
 

@@ -43,6 +43,12 @@ spec:
             value: {{ .Values.services.mongo.url }}
           - name: MONGO_DB_NAME
             value: {{ .Values.services.mongo.name }}
+          - name: MONGO_USER
+            value: {{ .Values.services.mongo.username }}
+          - name: MONGO_PASS
+            value: {{ .Values.services.mongo.password }}
+          - name: MONGO_CA
+            value: {{ .Values.services.mongo.ca }}
 {{- if .Values.generatedBindings.enabled }}
 {{.Files.Get "bindings.yaml" | indent 10 }}
 {{- end }}
