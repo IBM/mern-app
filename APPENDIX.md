@@ -32,7 +32,7 @@ Note, when running the project with native commands in either dev or release mod
     npm run dev 
     ```
 
-    A development web server runs on port 3000 and the app itself runs on port 3100. The web server and app will automatically reload if changes are made to the source.
+    A development web server runs on port `3000` and the app itself runs on port `3100`. The web server and app will automatically reload if changes are made to the source.
 
 5. Run the app in interactive debug mode with the command:
 
@@ -40,7 +40,7 @@ Note, when running the project with native commands in either dev or release mod
     npm run debug
     ```
 
-    The app listens on port 5858 for the debug client to attach to it, and on port 3000 for app requests.
+    The app listens on port `5858` for the debug client to attach to it, and on port `3000` for app requests.
 
 ### In release mode
 
@@ -58,7 +58,7 @@ Note, when running the project with native commands in either dev or release mod
     npm start
     ```
 
-    The app will now run in release mode, listening on port 3000. Hot reload is not available in this mode.
+    The app will now run in release mode, listening on port `3000`. Hot reload is not available in this mode.
 
 ## Deployment options
 
