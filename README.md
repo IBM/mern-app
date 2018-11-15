@@ -14,14 +14,14 @@ By running this code, you'll understand how to:
 1. The user views the React web app with a browser.
 2. With both components written in Node.js, the React front end communicates with the Express back end via RESTful APIs.
 3. The back-end Express application uses the Mongo database for storing and retrieving data.
-4. Back-end results are communicated back to the the front end.
-5. Front-end results are rendered in a human readable format to the user.
+4. Back-end results are communicated back to the front end.
+5. Front-end results are rendered in a human-readable format to the user.
 
 ## Included Components
 
 * [IBM Cloud](https://console.bluemix.net/docs/overview/ibm-cloud.html#overview): Provides a computing platform that includes a catalog of cloud services which can be integrated with PaaS and IaaS to build business applications.
-* [Kubernetes Cluster](https://console.bluemix.net/docs/containers/container_index.html): Create and manage your own cloud infrastructure and use Kubernetes as your container orchestration engine.
-* [MongoDB](https://console.bluemix.net/docs/infrastructure/database-tools/mongodb-topic-description.html#mongodb): Fully featured NoSQL server that is horizontally scalable to meet your enterprise class database service needs.
+* [Kubernetes Cluster](https://console.bluemix.net/docs/containers/container_index.html): Create and manage your cloud infrastructure and use Kubernetes as your container orchestration engine.
+* [MongoDB](https://console.bluemix.net/docs/infrastructure/database-tools/mongodb-topic-description.html#mongodb): Fully featured NoSQL server that is horizontally scalable to meet your enterprise-class database service needs.
 * [Express](https://expressjs.com/): Most popular and minimalistic web framework for creating API and Web server.
 * [React](https://facebook.github.io/react/): JavaScript library for building user interfaces.
 
@@ -29,11 +29,11 @@ By running this code, you'll understand how to:
 
 * [Node.js](https://nodejs.org/): An open-source JavaScript run-time environment for executing server-side JavaScript code.
 * [Containers](https://www.ibm.com/cloud-computing/bluemix/containers): Virtual software objects that include all the elements that an app needs to run.
-* [Cloud native](https://github.com/cncf): Cloud native is an approach to building and running applications that exploits the advantages of the cloud computing delivery model
+* [Cloud native](https://github.com/cncf): Cloud native is an approach to building and running applications that exploit the advantages of the cloud computing delivery model
 
 ## Getting Started
 
-Ensure [IBM Cloud Developer Tools](https://github.com/IBM-Cloud/ibm-cloud-developer-tools) is installed. To install on MacOS and Linux, run:
+Ensure [IBM Cloud Developer Tools](https://github.com/IBM-Cloud/ibm-cloud-developer-tools) are installed. To install on MacOS and Linux, run:
 
 ```
 curl -sL http://ibm.biz/idt-installer | bash
@@ -67,15 +67,15 @@ The starter project supports the concept of dev mode and release mode.  In dev m
     ibmcloud dev test
     ```
 
-3. Run the app in dev mode with command:
+3. Run the app in dev mode with the command:
 
     ```
     ibmcloud dev shell run-dev &
     ```
 
-    A web server will runs on port `3000` and the app itself runs on port `3100`. The web server and app will automatically reload if changes are made to the source.
+    A web server runs on port `3000` and the app itself runs on port `3100`. The web server and app automatically reload if changes are made to the source.
 
-4. Run the app in interactive debug mode with command:
+4. Run the app in interactive debug mode with the command:
 
     ```
     ibmcloud dev debug
