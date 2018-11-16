@@ -53,4 +53,5 @@ chart-path : "chart/mernexample"
 
 # The IBM version of this configuration
 version : "0.0.3"
+ibm-generated-id : "7b82cc64-9fd4-4246-8b16-b1cc5f6f5e0b"
 credentials-filepath : "server/localdev-config.json, vcap-local.js, credentials.json, localdev-config.json"
