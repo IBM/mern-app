@@ -19,16 +19,16 @@ By running this code, you'll understand how to:
 
 ## Included Components
 
-* [IBM Cloud](https://console.bluemix.net/docs/overview/ibm-cloud.html#overview): Provides a computing platform that includes a catalog of cloud services which can be integrated with PaaS and IaaS to build business applications.
-* [Kubernetes Cluster](https://console.bluemix.net/docs/containers/container_index.html): Create and manage your cloud infrastructure and use Kubernetes as your container orchestration engine.
-* [MongoDB](https://console.bluemix.net/docs/infrastructure/database-tools/mongodb-topic-description.html#mongodb): Fully featured NoSQL server that is horizontally scalable to meet your enterprise-class database service needs.
+* [IBM Cloud](https://cloud.ibm.com/docs/overview/ibm-cloud.html#overview): Provides a computing platform that includes a catalog of cloud services which can be integrated with PaaS and IaaS to build business applications.
+* [Kubernetes Cluster](https://cloud.ibm.com/docs/containers/container_index.html): Create and manage your cloud infrastructure and use Kubernetes as your container orchestration engine.
+* [MongoDB](https://cloud.ibm.com/docs/infrastructure/database-tools/mongodb-topic-description.html#mongodb): Fully featured NoSQL server that is horizontally scalable to meet your enterprise-class database service needs.
 * [Express](https://expressjs.com/): Most popular and minimalistic web framework for creating API and Web server.
-* [React](https://facebook.github.io/react/): JavaScript library for building user interfaces.
+* [React](https://reactjs.org/): JavaScript library for building user interfaces.
 
 ## Featured Technologies
 
 * [Node.js](https://nodejs.org/): An open-source JavaScript run-time environment for executing server-side JavaScript code.
-* [Containers](https://www.ibm.com/cloud-computing/bluemix/containers): Virtual software objects that include all the elements that an app needs to run.
+* [Containers](https://www.ibm.com/cloud/container-service): Virtual software objects that include all the elements that an app needs to run.
 * [Cloud native](https://github.com/cncf): Cloud native is an approach to building and running applications that exploit the advantages of the cloud computing delivery model
 
 ## Getting Started
@@ -123,7 +123,7 @@ Whether you run in dev mode or release mode, you have the same default URLs avai
 
 These projects are designed for deployment to IBM Cloud through the IBM Cloud Developer Tools CLI, to either Kubernetes (public or private cloud) or Cloud Foundry (public cloud only).
 
-Before deploying your MERN app, you will need to sign in to [IBM Cloud](https://console.bluemix.net/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) via Command Line.
+Before deploying your MERN app, you will need to sign in to [IBM Cloud](https://cloud.ibm.com/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) via Command Line.
 
  ```
 ibmcloud login
@@ -172,7 +172,7 @@ Now that we have a Dockerized version of our app running, before we push it to p
 
 ### Provisioning an instance of MongoDB
 
-*  Create a managed instance of MongoDB by searching for **Compose for MongoDB** in the [Catalog](https://console.bluemix.net/catalog/)
+*  Create a managed instance of MongoDB by searching for **Compose for MongoDB** in the [Catalog](https://cloud.ibm.com/catalog/)
 * Once created go to the _Service credentials_ menu and create a new credential.
 * Copy the `uri` to a text file, we'll need to parse the content out.
 * From the `uri` we will need to extract the `username`, `password`, and `mongo_url`. The text is in the form of `mongodb://{username}:{password}@{mongo_url}`.
@@ -222,15 +222,15 @@ services:
 
 ## Links
 
-* [Node Programming Guide](https://console.bluemix.net/docs/node/index.html#getting-started-tutorial): Tutorial on Node.js app development.
-* [Add a Service to Your App](https://console.bluemix.net/docs/apps/reqnsi.html#add_service): Learn how to add a resource to your cloud native app.
+* [Node Programming Guide](https://cloud.ibm.com/docs/node/index.html#getting-started-tutorial): Tutorial on Node.js app development.
+* [Add a Service to Your App](https://cloud.ibm.com/docs/apps/reqnsi.html#add_service): Learn how to add a resource to your cloud native app.
 
 ## Learn More
 
-* [Starter Kits](https://console.bluemix.net/developer/appservice/starter-kits/): Enjoyed this application? Check out our Starter Kits.
+* [Starter Kits](https://cloud.ibm.com/developer/appservice/starter-kits/): Enjoyed this application? Check out our Starter Kits.
 * [Architecture Center](https://www.ibm.com/cloud/garage/architectures): Explore Architectures that provide flexible infrastructure solutions.
 
 ## License
-This code pattern is licensed under the Apache Software License, Version 2.  Separate third party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1 (DCO)](https://developercertificate.org/) and the [Apache Software License, Version 2](http://www.apache.org/licenses/LICENSE-2.0.txt).
+This code pattern is licensed under the Apache Software License, Version 2.  Separate third party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1 (DCO)](https://developercertificate.org/) and the [Apache Software License, Version 2](https://www.apache.org/licenses/LICENSE-2.0.txt).
 
-[Apache Software License (ASL) FAQ](http://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN)
+[Apache Software License (ASL) FAQ](https://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN)
