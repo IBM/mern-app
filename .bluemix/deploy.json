@@ -33,7 +33,8 @@
       "type": "string"
     }
   },
-  "required": ["dev-region", "dev-organization", "dev-space", "app-name", "cf-host", "cf-domain"],  "form": [{
+  "required": ["dev-region", "dev-organization", "dev-space", "app-name", "cf-host", "cf-domain"],  
+  "form": [{
     "type": "validator",
     "url": "/devops/setup/bm-helper/helper.html"
   },
