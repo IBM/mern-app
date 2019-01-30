@@ -23,9 +23,17 @@
     "app-name": {
       "description": "app name",
       "type": "string"
+    },
+    "cf-host": {
+      "description": "CF host",
+      "type": "string"
+    },
+    "cf-domain": {
+      "description": "CF domain",
+      "type": "string"
     }
   },
-  "required": ["dev-region", "dev-organization", "dev-space", "app-name"],  "form": [{
+  "required": ["dev-region", "dev-organization", "dev-space", "app-name", "cf-host", "cf-domain"],  "form": [{
     "type": "validator",
     "url": "/devops/setup/bm-helper/helper.html"
   },
