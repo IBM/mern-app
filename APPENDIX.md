@@ -160,7 +160,7 @@ Where the column labeled `PORT(S)` has two values. The port number on the left i
 You can deploy to Cloud Foundry using:
 
 ```bash
-cf push
+cf push --hostname <unique hostname> -d mybluemix.net
 ```
 
 ### VM and Baremetal
