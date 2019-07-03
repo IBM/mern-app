@@ -3,9 +3,9 @@
 This repository has code to create a web app that is pre-configured with the MERN stack (MongoDB, Express.js, React, Node.js). We use IBM Cloud services to host our application; the IBM Cloud Developer Tools CLI to run and debug locally; and lastly provide native commands to deploy to Kubernetes or Cloud Foundry.
 
 By running this code, you'll understand how to:
-* Build an application that uses MongoDB, Express.js, React, and Node.js
-* Create an application for monitoring and distributed tracing using App Metrics
-* Deploy an application using the IBM Cloud Developer Tools CLI or natively with Kubernetes or Cloud Foundry
+* Build an application that uses MongoDB, Express.js, React, and Node.js.
+* Create an application for monitoring and distributed tracing using App Metrics.
+* Deploy an application using the IBM Cloud Developer Tools CLI or natively with Kubernetes or Cloud Foundry.
 
 ![](https://github.com/IBM/pattern-utils/raw/master/mern-starter/architecture.png)
 
@@ -19,9 +19,9 @@ By running this code, you'll understand how to:
 
 ## Included Components
 
-* [IBM Cloud](https://cloud.ibm.com/docs/overview/ibm-cloud.html#overview): Provides a computing platform that includes a catalog of cloud services which can be integrated with PaaS and IaaS to build business applications.
-* [Kubernetes Cluster](https://cloud.ibm.com/docs/containers/container_index.html): Create and manage your cloud infrastructure and use Kubernetes as your container orchestration engine.
-* [MongoDB](https://cloud.ibm.com/docs/infrastructure/database-tools/mongodb-topic-description.html#mongodb): Fully featured NoSQL server that is horizontally scalable to meet your enterprise-class database service needs.
+* [IBM Cloud](https://cloud.ibm.com/docs/overview?topic=overview-whatis-platform): Provides a computing platform that includes a catalog of cloud services which can be integrated with PaaS and IaaS to build business applications.
+* [Kubernetes Cluster](https://cloud.ibm.com/docs/containers?topic=containers-getting-started): Create and manage your cloud infrastructure and use Kubernetes as your container orchestration engine.
+* [MongoDB](https://cloud.ibm.com/docs/infrastructure/database-tools?topic=database-tools-dbt-mongodb): Fully featured NoSQL server that is horizontally scalable to meet your enterprise-class database service needs.
 * [Express](https://expressjs.com/): Most popular and minimalistic web framework for creating API and Web server.
 * [React](https://reactjs.org/): JavaScript library for building user interfaces.
 
@@ -29,23 +29,23 @@ By running this code, you'll understand how to:
 
 * [Node.js](https://nodejs.org/): An open-source JavaScript run-time environment for executing server-side JavaScript code.
 * [Containers](https://www.ibm.com/cloud/container-service): Virtual software objects that include all the elements that an app needs to run.
-* [Cloud native](https://github.com/cncf): Cloud native is an approach to building and running applications that exploit the advantages of the cloud computing delivery model
+* [Cloud native](https://github.com/cncf): Cloud native is an approach to building and running applications that exploit the advantages of the cloud computing delivery model.
 
 ## Getting Started
 
 > As an alternative to the steps below, you can [create this project as a starter kit on IBM Cloud](https://cloud.ibm.com/developer/appservice/create-app?starterKit=6da47a55-cff8-344d-a8ec-08a24c9e1936), which automatically provisions required services, and injects service credentials into a custom fork of this pattern.
 
-Ensure [IBM Cloud Developer Tools](https://github.com/IBM-Cloud/ibm-cloud-developer-tools) are installed. To install on MacOS and Linux, run:
+Install the latest version of the [IBM Cloud Developer Tools](https://github.com/IBM-Cloud/ibm-cloud-developer-tools) CLI.
 
-```
-curl -sL http://ibm.biz/idt-installer | bash
-```
+* For macOS and Linux, run the  following command:
+  ```
+  curl -sL https://ibm.biz/idt-installer | bash
+  ```
 
-To install on Windows, run as Administrator:
-
- ```
-Set-ExecutionPolicy Unrestricted; iex(New-Object Net.WebClient).DownloadString('http://ibm.biz/idt-win-installer')
-```
+* For Windows 10 Pro, run the following command in a PowerShell prompt as Admistrator:
+  ```
+  [Net.ServicePointManager]::SecurityProtocol = "Tls12"; iex(New-Object Net.WebClient).DownloadString('https://ibm.biz/idt-win-installer')
+  ```
 
 > *NOTE:* IDT builds and runs the project using Docker containers, the recommended approach for cloud native development. However, direct use of native tools (e.g. npm) is also supported. See the [Appendix](APPENDIX.md) for more information.
 
@@ -55,13 +55,13 @@ The starter project supports the concept of dev mode and release mode.  In dev m
 
 #### Working in development mode
 
-1. Build the project with all dependencies, including dev dependencies, with the command:
+1. Build the project with all dependencies, including dev dependencies, with the following command:
 
     ```
     ibmcloud dev build --debug
     ```    
 
-    > *NOTE:* Ensure a Docker daemon is running before issuing the above command
+    > *NOTE:* Ensure a Docker daemon is running before issuing this command.
 
 2. Run project unit tests with the command:
 
@@ -121,11 +121,11 @@ Whether you run in dev mode or release mode, you have the same default URLs avai
 
 ## Deploying your MERN app
 
-These projects are designed for deployment to IBM Cloud through the IBM Cloud Developer Tools CLI, to either Kubernetes (public or private cloud) or Cloud Foundry (public cloud only).
+These projects are designed for deployment to IBM Cloud through the IBM Cloud Developer Tools CLI, to Kubernetes (public or private cloud) or Cloud Foundry (public cloud only).
 
-Before deploying your MERN app, you will need to sign in to [IBM Cloud](https://cloud.ibm.com/docs/cli/reference/ibmcloud/bx_cli.html#ibmcloud_login) via Command Line.
+Before deploying your MERN app, you will need to sign in to [IBM Cloud](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started#step3-configure-idt-env) through the command line.
 
- ```
+```
 ibmcloud login
 ```
 
@@ -147,7 +147,7 @@ To deploy the app to Kubernetes:
 ibmcloud dev deploy --target container
 ```
 
-An interactive session will begin where you'll be prompted for a new or existing IBM Cloud Kubernetes Service cluster name. Once the cluster is validated and the Docker registry confirmed the app will be deployed to a Kubernetes cluster. _The output below has been trimmed for readability._
+An interactive session will begin where you'll be prompted for a new or existing IBM Cloud Kubernetes Service cluster name. Once the cluster is validated and the Docker registry confirmed the app will be deployed to a Kubernetes cluster. _The following output has been trimmed for readability._
 
 ```
 The IBM cluster name for the deployment of this application will be: stevemar-cluster
@@ -172,7 +172,7 @@ Now that we have a Dockerized version of our app running, before we push it to p
 
 ### Provisioning an instance of MongoDB
 
-*  Create a managed instance of MongoDB by searching for **Compose for MongoDB** in the [Catalog](https://cloud.ibm.com/catalog/)
+* Create a managed instance of MongoDB by searching for **Compose for MongoDB** in the [Catalog](https://cloud.ibm.com/catalog/)
 * Once created go to the _Service credentials_ menu and create a new credential.
 * Copy the `uri` to a text file, we'll need to parse the content out.
 * From the `uri` we will need to extract the `username`, `password`, and `mongo_url`. The text is in the form of `mongodb://{username}:{password}@{mongo_url}`.
@@ -183,7 +183,7 @@ Now that we have a Dockerized version of our app running, before we push it to p
 
 ### Configuring MongoDB
 
-Connecting to MongoDB is done in the file [server/routers/mongo.js](server/routers/mongo.js). It is controlled through environment variables. Below is a sample set of credentials.
+Connecting to MongoDB is done in the file [server/routers/mongo.js](server/routers/mongo.js). It is controlled through environment variables. See the following sample set of credentials.
 
 ```bash
 export MONGO_URL='portal-ssl1308-22.bmix-dal-yp-c4627161-a212-45bd-b0bd-62004a6e6f5c.421838044.composedb.com:54951'
@@ -222,8 +222,8 @@ services:
 
 ## Links
 
-* [Node Programming Guide](https://cloud.ibm.com/docs/node/index.html#getting-started-tutorial): Tutorial on Node.js app development.
-* [Add a Service to Your App](https://cloud.ibm.com/docs/apps/reqnsi.html#add_service): Learn how to add a resource to your cloud native app.
+* [Node Programming Guide](https://cloud.ibm.com/docs/node?topic=nodejs-getting-started): Tutorial on Node.js app development.
+* [Adding a service to your app](https://cloud.ibm.com/docs/apps?topic=creating-apps-add-resource): Learn how to add a service to your cloud native app.
 
 ## Learn More
 
