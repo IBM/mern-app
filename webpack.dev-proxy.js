@@ -21,9 +21,9 @@ module.exports = merge(common, {
     host: '0.0.0.0',
     port: 3000,
     proxy: {
-      "/appmetrics-dash": "http://localhost:3100",
-      "/health": "http://localhost:3100",
-      "/api": "http://localhost:3100",
+      "/appmetrics-dash": "https://localhost:3100",
+      "/health": "https://localhost:3100",
+      "/api": "https://localhost:3100",
     }
   }
 });
