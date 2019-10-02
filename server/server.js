@@ -1,12 +1,3 @@
-// Uncomment following to enable zipkin tracing, tailor to fit your network configuration:
-// var appzip = require('appmetrics-zipkin')({
-//     host: 'localhost',
-//     port: 9411,
-//     serviceName:'frontend'
-// });
-
-require('appmetrics-dash').attach();
-require('appmetrics-prometheus').attach();
 const appName = require('./../package').name;
 const http = require('http');
 const express = require('express');
@@ -28,7 +19,6 @@ require('./routers/index')(app, server);
 
 const port = process.env.PORT || localConfig.port;
 server.listen(port, function(){
-  logger.info(`mernexample listening on http://localhost:${port}/appmetrics-dash`);
   logger.info(`mernexample listening on http://localhost:${port}`);
 });
 
