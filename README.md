@@ -111,11 +111,7 @@ Whether you run in dev mode or release mode, you have the same default URLs avai
 
    ![](https://github.com/IBM/pattern-utils/raw/master/mern-starter/homepage.png)
 
-2. [http://localhost:3000/appmetrics-dash](http://localhost:3000/appmetrics-dash)
-
-   ![](https://github.com/IBM/pattern-utils/raw/master/mern-starter/appmetrics.png)
-
-3. [http://localhost:3000/health](http://localhost:3000/health)
+2. [http://localhost:3000/health](http://localhost:3000/health)
 
    ![](https://github.com/IBM/pattern-utils/raw/master/mern-starter/health.png)
 
