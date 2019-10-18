@@ -1,6 +1,6 @@
 ---
 applications:
-  - command: npm prune --production && NODE_ENV=production npm start
+  - command: NODE_ENV=production npm start
     env:
       NPM_CONFIG_PRODUCTION: false
     instances: 1
