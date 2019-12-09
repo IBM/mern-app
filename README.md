@@ -1,11 +1,11 @@
 # Create and deploy a cloud native web application using the MERN (MongoDB, Express, React, Node.js) stack
 
-This repository has code to create a web app that is pre-configured with the MERN stack (MongoDB, Express.js, React, Node.js). We use IBM Cloud services to host our application; the IBM Cloud Developer Tools CLI to run and debug locally; and lastly provide native commands to deploy your app to Cloud Foundry, a Kubernetes cluster, or a Red Hat OpenShift cluster. OpenShift is available only through a standard cluster, which requires you to have a billable account.
+This repository has code to create a web app that is pre-configured with the MERN stack (MongoDB, Express.js, React, Node.js). We use IBM Cloud services to host our application; the IBM Cloud Developer Tools CLI to run and debug locally; and lastly provide native commands to deploy your app to Cloud Foundry or a Kubernetes cluster. You can also deploy your app to a Red Hat OpenShift cluster, but you must use the IBM Cloud console instead of the CLI. OpenShift is available only through a standard cluster, which requires you to have a billable account.
 
 By running this code, you'll understand how to:
 * Build an application that uses MongoDB, Express.js, React, and Node.js.
 * Create an application for monitoring and distributed tracing using App Metrics.
-* Deploy an application using the IBM Cloud Developer Tools CLI or natively with Cloud Foundry, Kubernetes, or OpenShift.
+* Deploy an application using the IBM Cloud Developer Tools CLI or natively with Cloud Foundry or Kubernetes. For OpenShift deployments, use the IBM Cloud console instead of the CLI.
 
 ![](https://github.com/IBM/pattern-utils/raw/master/mern-starter/architecture.png)
 
@@ -33,7 +33,7 @@ By running this code, you'll understand how to:
 
 ## Getting Started
 
-> As an alternative to the steps below, you can [create this project as a starter kit on IBM Cloud](https://cloud.ibm.com/developer/appservice/create-app?starterKit=6da47a55-cff8-344d-a8ec-08a24c9e1936), which automatically provisions required services, and injects service credentials into a custom fork of this pattern.
+> As an alternative to the steps below, you can [create this project as a starter kit on IBM Cloud](https://cloud.ibm.com/developer/appservice/create-app?starterKit=6da47a55-cff8-344d-a8ec-08a24c9e1936), which automatically provisions required services and injects service credentials into a custom fork of this pattern. Cloud Foundry, Kubernetes, and Red Hat OpenShift are available as deployment targets when you use the starter kit.
 
 Install the latest version of the [IBM Cloud Developer Tools](https://github.com/IBM-Cloud/ibm-cloud-developer-tools) CLI.
 
