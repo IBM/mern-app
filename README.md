@@ -5,7 +5,7 @@ This repository has code to create a web app that is pre-configured with the MER
 By running this code, you'll understand how to:
 * Build an application that uses MongoDB, Express.js, React, and Node.js.
 * Create an application for monitoring and distributed tracing using App Metrics.
-* Deploy an application using the IBM Cloud Developer Tools CLI or natively with Kubernetes or Cloud Foundry.
+* Deploy an application using the IBM Cloud Developer Tools CLI or natively with Cloud Foundry, Kubernetes, or OpenShift.
 
 ![](https://github.com/IBM/pattern-utils/raw/master/mern-starter/architecture.png)
 
