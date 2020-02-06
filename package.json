@@ -4,7 +4,7 @@
   "description": "A generated IBM Cloud application",
   "private": true,
   "engines": {
-    "node": "^8.11.1"
+    "node": "^10.0.0"
   },
   "scripts": {
     "start": "node server/server.js",
