@@ -1,3 +1,5 @@
+# Warning: This starterkit will be deprecated soon. If you would like an example IBM StarterKit that uses Node.js with a Database integration, please use https://github.com/IBM/nodejs-cloudant
+
 # Create and deploy a cloud native web application using the MERN (MongoDB, Express, React, Node.js) stack
 
 This repository has code to create a web app that is pre-configured with the MERN stack (MongoDB, Express.js, React, Node.js). We use IBM Cloud services to host our application; the IBM Cloud Developer Tools CLI to run and debug locally; and lastly provide native commands to deploy your app to Cloud Foundry or a Kubernetes cluster. You can also deploy your app to a Red Hat OpenShift cluster, but you must use the IBM Cloud console instead of the CLI. OpenShift is available only through a standard cluster, which requires you to have a billable account.
