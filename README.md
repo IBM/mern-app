@@ -53,7 +53,7 @@ Install the latest version of the [IBM Cloud Developer Tools](https://github.com
 
 ## Building your MERN app
 
-The starter project supports the concept of dev mode and release mode.  In dev mode, the starter app runs with dev dependencies installed and hot reload enabled for both the front-end and back-end aspects of the app. Dev mode is intended for use during app development. Release mode excludes dev dependencies and runs the app without hot reload. Release mode is intended for running in production.
+The starter project supports the concept of dev mode and release mode.  In dev mode, the starter app runs with dev dependencies installed and hot reload enabled for both the front-end and back-end aspects of the app. Dev mode is intended for use during app development. Release mode excludes dev dependencies and runs the app without hot reload. Release mode is intended for running in production. You can also verify the state of your locally running application using the Selenium UI test script included in the `scripts` directory.
 
 #### Working in development mode
 
