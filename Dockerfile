@@ -7,7 +7,7 @@ WORKDIR /app
 # Install npm production packages
 USER root
 COPY --chown=1001:1001 package.json webpack.common.js webpack.dev-proxy.js webpack.dev-standalone.js webpack.prod.js /app/
-RUN cd /app; npm install --production
+RUN cd /app; mkdir node_modules; chown 1001:1001 node_modules; npm install --production
 COPY --chown=1001:1001 /client /app/client/
 RUN npm install --only=dev; npm run build; npm prune --production
 COPY --chown=1001:1001 . /app
