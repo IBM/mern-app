@@ -1,17 +1,16 @@
-FROM registry.access.redhat.com/ubi8/nodejs-10
+FROM registry.access.redhat.com/ubi8/ubi
 
-# Change working directory
+RUN curl -sL https://rpm.nodesource.com/setup_12.x | bash -
+RUN yum install -y nodejs
+
+RUN mkdir /app
 WORKDIR /app
 
-## NOTE - rhel enforces user container permissions stronger ##
-# Install npm production packages
-USER root
-COPY --chown=1001:1001 package.json webpack.common.js webpack.dev-proxy.js webpack.dev-standalone.js webpack.prod.js /app/
-RUN cd /app; mkdir node_modules; chown 1001:1001 node_modules; npm install --production
-COPY --chown=1001:1001 /client /app/client/
-RUN npm install --only=dev; npm run build; npm prune --production
-COPY --chown=1001:1001 . /app
-USER 1001
+COPY package.json webpack.common.js webpack.dev-proxy.js webpack.dev-standalone.js webpack.prod.js /app/
+RUN npm install
+COPY /client /app/client
+RUN npm run build; npm prune --production
+COPY . /app
 
 ENV NODE_ENV production
 ENV PORT 3000
