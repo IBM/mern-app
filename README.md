@@ -1,4 +1,8 @@
-# Warning: This starterkit will be deprecated soon. If you would like an example IBM StarterKit that uses Node.js with a Database integration, please use https://github.com/IBM/nodejs-cloudant
+# WARNING: This repository is no longer maintained :warning:
+
+> Please see the replacement repositories available for [Node.js](https://github.com/IBM/node-express-app), [Node.js+Cloudant](https://github.com/IBM/nodejs-cloudant), [Go](https://github.com/IBM/go-gin-app), [Java Liberty](https://github.com/IBM/java-liberty-app), [Java Spring](https://github.com/IBM/java-spring-app), [Python Flask](https://github.com/IBM/python-flask-app), [Python Django](https://github.com/IBM/python-django-app), and [Swift](https://github.com/IBM/swift-kitura-app).
+
+> This repository will not be updated. The repository will be kept available in read-only mode.
 
 # Create and deploy a cloud native web application using the MERN (MongoDB, Express, React, Node.js) stack
 
